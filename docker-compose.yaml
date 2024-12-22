@@ -1,0 +1,14 @@
+services:
+  ecommerce-db:
+    image: postgres:16.3-bullseye
+    container_name: ecommerce-db
+    ports:
+      - "9999:5432"
+    environment:
+      POSTGRES_PASSWORD: ecommerce@2024
+      POSTGRES_USER: ecommerce
+      POSTGRES_DB: ecommerce_db
+    volumes:
+      - ecommerce-vol:/var/lib/postgresql/data
+volumes:
+  ecommerce-vol:
