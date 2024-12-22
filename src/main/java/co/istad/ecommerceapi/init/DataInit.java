@@ -38,8 +38,8 @@ public class DataInit {
         initCard();
         initRoles();
         initUsers();
-        initProducts();
-        initCategory();
+//        initProducts();
+//        initCategory();
 
     }
 
@@ -118,6 +118,7 @@ public class DataInit {
         iphone16PM.setStock(5);
         iphone16PM.setNumberOfPeopleBought(44       );
         iphone16PM.setImageUrl("Iphone 16 PM");
+
 
         Product iphone15PM = new Product();
         iphone15PM.setProductName("iphone15PM");
